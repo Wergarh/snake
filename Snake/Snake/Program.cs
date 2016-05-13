@@ -18,6 +18,9 @@ namespace Snake
             p2.x = 4; p2.y = 5;
             p2.sym = '#';
 
+            Point p3 = new Point(6, 7, '%');
+            p3.Draw();
+
             p1.Draw();
             p2.Draw();
 
