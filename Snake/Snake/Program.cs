@@ -12,14 +12,18 @@ namespace Snake
         {
             Console.SetBufferSize(80, 25);
 
-            HorizontalLine hLine1 = new HorizontalLine(1, 78, 1, '*');
-            HorizontalLine hLine2 = new HorizontalLine(1, 78, 24, '*');
-            VerticalLine vLine1 = new VerticalLine(1, 24, 1, '*');
-            VerticalLine vLine2 = new VerticalLine(1, 24, 78, '*');
+            HorizontalLine hLine1 = new HorizontalLine(0, 78, 0, '#');
+            HorizontalLine hLine2 = new HorizontalLine(0, 78, 24, '#');
+            VerticalLine vLine1 = new VerticalLine(0, 24, 0, '#');
+            VerticalLine vLine2 = new VerticalLine(0, 24, 78, '#');
             hLine1.Draw();
             hLine2.Draw();
             vLine1.Draw();
             vLine2.Draw();
+
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Draw();
 
             Console.ReadLine();
         }
